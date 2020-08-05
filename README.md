@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img alt="Proffy app" src="https://raw.githubusercontent.com/luanrem/Profy_Web_NLW2/6a318e6048565a791706b6f626b96745cc57a4d5/src/assets/images/landing.svg" />
+    <img alt="Proffy app" src="https://github.com/luanrem/Profy_Web_NLW2/blob/master/src/assets/github/proffy_logo.png?raw=true" />
     <br>
     Next Level Week #2
 </h1>
@@ -22,10 +22,21 @@
   </a>
 </p>
 
+
 <p align="center">
   <a href="#rocket-technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#information_source-how-to-use">How To Use</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 </p>
+
+
+----
+## :vhs: App Preview
+
+<h1 align="center">
+    <img alt="Proffy preview" src="https://github.com/luanrem/Profy_Web_NLW2/blob/master/src/assets/github/Proffy_animate.gif?raw=true" />
+    <br>
+</h1>
+
 
 ## :rocket: Technologies
 
