@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom'
+import { motion } from 'framer-motion';
 
 import logoImg from '../../assets/images/logo.svg';
 import landingImg from '../../assets/images/landing.svg';
@@ -26,25 +27,83 @@ function Landing() {
   return (
     <div id="page-landing">
       <div id="page-landing-content" className="c">
-        <div className="logo-container">
-          <img src={logoImg} alt="Proffy"/>
+        <motion.div 
+          className="logo-container"
+          initial={{ 
+            opacity: 0,
+            skew: 20,
+            skewY: 20,
+
+           }}
+          animate={{ 
+            opacity: 1,
+            skew: 0,
+            skewY: 0
+           }}
+          transition={{ 
+            duration: 2
+           }}
+        >
+          <img 
+            src={logoImg} 
+            alt="Proffy"
+          />
           <h2>Sua plataforma de estudos online.</h2>
-        </div>
+        </motion.div>
         
-        <img 
+        <motion.img 
           src={landingImg} 
           alt="Plataforma de estudos" 
           className="hero-image"
+          initial={{ 
+            opacity: 0,
+            y: 200,
+            scale: 0
+           }}
+          animate={{ 
+            opacity: 1,
+            y: 0,
+            scale: 1
+           }}
+          transition={{ 
+            duration: 1
+           }}
         />
 
         <div className="buttons-container">
           <Link to="/study" className="study">
-            <img src={studyIcon} alt="Estudar"/>
+            <motion.img 
+              src={studyIcon} 
+              alt="Estudar"
+              initial={{
+                x: -2000
+               }}
+              animate={{ 
+                x: 0
+               }}
+              transition={{ 
+                duration: 1,
+                delay: 2
+               }}
+            />
             Estudar
           </Link>
 
           <Link to="/give-classes" className="give-classes">
-            <img src={giveClassesIcon} alt="Dar aulas"/>
+            <motion.img 
+              src={giveClassesIcon} 
+              alt="Dar aulas"
+              initial={{
+                x: 2000
+               }}
+              animate={{ 
+                x: 0
+               }}
+              transition={{ 
+                duration: 1,
+                delay: 2
+               }}
+            />
             Dar aulas
           </Link>
         </div>
